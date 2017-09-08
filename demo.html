@@ -37,36 +37,6 @@
 </head>
 <body>
 	<h3>CustomizeRow</h3>
-		CustomizeRow能够实现FF、IE、chrome网页多行文本超出省略。CustomizeRow根据所定义的行数、缩进、字符间距、行高更新标签高度、文本内容判断是否溢出省略。<br>
-		标签文本内容会被截断,完整文本请通过title属性获取。
-		<b>chrome若存在-webkit-line-clamp会出现重复的"..."</b>
-	<ol>
-		<li>依赖jQuery</li>
-		<li>引入cutstomizerow.js</li>
-		<li>在标签上的添加控制类 "cus-row" 和 cus-row , cus-row的值为限制的行数
-			<pre>
-				&lt;p class="cus-row" cus-row="2"&gt; 文本内容 &lt;p&gt;
-			</pre>
-		</li>
-		<li>
-			实例化对象
-			<pre>
-				var customizerow = new customizeRow(Options)
-			</pre>		
-		</li>
-	</ol>
-	<h4>参数Options[Object]</h4>
-	<table>
-		<tr>
-			<th>属性</th><th>类型</th><th>属性值</th><th>说明</th>
-		</tr>
-		<tr>
-			<td>rowclass</td><td>string</td><td>class/id 默认：.cus-row</td><td>标签选择器</td>
-		</tr>
-		<tr>
-			<td>brower</td><td>boolean</td><td>默认为false</td><td>是否在chrome运行</td>
-		</tr>
-	</table>
 
 	<p class="cus-row" cus-row="1">古人的生活原来是这样的！在《幼学琼林》中，看古人的吃穿住行、看古人的学习生活、看古人的智慧结晶、看古代的山川河流。我们还可以插上想象的翅膀，去认识不一样的波波熊、机智的猫、快乐的皮皮、不断成长的匹诺曹、文明的灰狼、善良的GUJI-GUJI、充满智慧的小猪、写作天才小老鼠……他们是我们的伙伴，也是我们成长路上的榜样，陪着我们在阅读中收获快乐与成长。</p>
 
