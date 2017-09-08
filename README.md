@@ -4,22 +4,24 @@
 
 2017/09/08 upload
 
-##使用方法
-#css
+## 使用方法
+# css
 <link rel="stylesheet" type="text/css" href="src/css/customizerow.css">
 
-#html
+
+# html
  <p class='cus-row' cus-row='3'>文本内容</p>
 
-#js
+
+# js
 <script src="src/js/customizerow.js"></script>
 <script>
   var customizerow = new customizeRow({
-				 rowclass:".cus-row",
-				 brower:true
-		})
+	 rowclass:".cus-row",
+	 brower:true
+ })
 </script>
 
-#参数
+# 参数
 rowclass [string] 标签选择器，需要应用的标签，默认".cusrow"
 brower [boolean] 决定是否在chrome上运行，默认为false运行
