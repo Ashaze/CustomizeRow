@@ -6,14 +6,17 @@
 
 ## 使用方法
 # css
+```
 <link rel="stylesheet" type="text/css" href="src/css/customizerow.css">
-
+```
 
 # html
+```
  <p class='cus-row' cus-row='3'>文本内容</p>
-
+```
 
 # js
+```
 <script src="src/js/customizerow.js"></script>
 <script>
   var customizerow = new customizeRow({
@@ -21,6 +24,7 @@
 	 brower:true
  })
 </script>
+```
 
 # 参数
 rowclass [string] 标签选择器，需要应用的标签，默认".cusrow"
