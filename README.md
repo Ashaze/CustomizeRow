@@ -28,4 +28,5 @@
 
 # 参数
 rowclass [string] 标签选择器，需要应用的标签，默认".cusrow"
+
 brower [boolean] 决定是否在chrome上运行，默认为false运行
