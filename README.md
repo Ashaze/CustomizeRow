@@ -2,6 +2,10 @@
 依赖jQuery实现多行文本在firefox chrome ie能够显示定义的行数文本内容在超出时不撑破 容器并在尾部添加省略符号
 在chrome上，若应用了-webkit-line-clamp的方式实现，需要设置brower属性为true,以避免出现重复的"..."
 
+2018/03/12 
+1.修复 设置brower:true 下未识别出chrome浏览器的问题
+2.删除 冲突的样式，CustomizeRow能够自动设置文本容器高度
+
 2017/09/08 upload
 
 ## 使用方法

@@ -11,7 +11,7 @@
 			var defaults = {
 				ellipsis : "cus-row-ellipsis",
 				rowclass : ".cus-row",
-				brows:false
+				brower: false
 			}
 			var key;
 			for(key in options){
@@ -27,9 +27,8 @@
 		init:function(){
 			var that = this.opt;
 			var userAgent = navigator.userAgent;
-			if((userAgent.indexOf("Chrome")>-1)&&that.brower){return}
+			if((userAgent.indexOf('WOW') < 0 && userAgent.indexOf("Edge") < 0)&&that.brower){return}
 
-			
 			$(that.rowclass).each(function(){
 				var _this = $(this);
 				_this.height('auto');
@@ -53,6 +52,7 @@
 					_this.text(text.substr(0,(parseInt(b/a) - MAXROW)));
 				} 
 				_this.height(rowHeight + 2*MAXROW);
+				_this.css("webkitLineClamp",MAXROW);
 			})
 		}
 	}
